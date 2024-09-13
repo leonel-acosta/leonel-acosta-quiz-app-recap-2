@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Quiz App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-js="body">
+    <header>
+        <h1 class="page__title">History Quiz App</h1>
+        <h2 class="page__subtitle" aria-class="My profile">· Question Maker ·</h2>
+    </header>
+    <main>
+        <section class="form__container">
+            <form class="form" data-js="form">
+                <legend>Create your question</legend>
+                    <label for="question">
+                        Your question
+                    </label>
+                    <textarea required aria-label="question" type="textarea" name="your-question" id="your-question" maxlength="150" placeholder="Your question"></textarea>
+                    <label for="answer"></label>
+                        Answer
+                    </label>
+                    <textarea required aria-label="answer" type="textarea" name="answer" id="answer" maxlength="250" placeholder="Answer"></textarea>
+                    <label for="tags"></label>
+                        Tags
+                    </label>
+                    <input required aria-label="tags" type="text" name="tags" id="tags" maxlength="30" placeholder="tags">
+                    <button class="button" type="submit">Submit</button>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <a class="nav__link" aria-label="home" href="./index.html"><img class="nav__icon" src="./assets/home_filled.png"></a>
+            <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html"><img class="nav__icon" src="./assets/bookmark.png"></a>
+            <a class="nav__link current" aria-label="form" href="./form.html"><img class="nav__icon" src="./assets/question.png"></a>
+            <a class="nav__link" aria-label="profile" href="./profile.html"><img class="nav__icon" src="./assets/profile_filled.png"></a>
+        </nav>
+    </footer>
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/question-maker.js"></script>
+</html>
