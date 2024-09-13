@@ -32,4 +32,34 @@ p, h3, h4, h5, a{
 
 .hidden{
     display: none;
+
+/*Dark mode classes */
+body.dark {
+    background-color: rgb(50, 51, 58);
+    color: white;
+  }
+
+body.dark h2{color:white}
+body.dark p span h3 h4 h5{color:white}
+body.dark .subtitle{color:white}
+
+body.dark .container {
+    background-color: rgb(73, 73, 73);
 }
+
+body.dark .counter {
+    background-color: rgb(73, 73, 73);
+}
+
+body.dark .footer{
+    background-color: rgb(73, 73, 73);
+}
+
+body.dark header{
+    background-color: rgb(73, 73, 73);
+}
+
+body.dark button{
+    background-color: var(--accent-color);
+    color: var(--primary-color)
+  }
