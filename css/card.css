@@ -1,6 +1,7 @@
 .card__wrapper {
     position:relative;
     padding:2rem 0;
+    z-index:0
 }
 
 .bookmark:hover{
@@ -48,12 +49,13 @@
 }
 
 .answer__text{ 
-    display:none;
     color:var(--white-color);
     text-align:center;
     font-weight:800;
     font-size: 1.4em;
 }
+
+/*  Disable show answer css functionality
 
 .show_answer__text:active + .answer__text{
     display:block;
@@ -61,6 +63,7 @@
     border:dotted 4px white;
     padding:1em;
 }
+*/
 
 .categories__container{
     display:flex;
