@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Quiz App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="page__title">History Quiz App</h1>
+        <h2 class="page__subtitle" aria-class="My profile">· My profile ·</h2>
+    </header>
+    <main>
+        <section class="profile__container">
+            <div class="image__wrapper">
+                <img class="profile__picture" src="./assets/profile.jpg" alt="Profile picture">
+            </div>
+            <h2 class="profile__name" aria-label="User name">Jane Doe</h2>
+        </section>
+        <section class="container about-me__container">
+            <h2 class="subtitle">About Me</h2>
+            <p class="about-me__text">Passionate historian with a love for uncovering the hidden stories of the past. With a background in ancient and medieval studies, he enjoys exploring everything from the rise and fall of empires to the everyday lives of people in bygone eras. A frequent traveler, John combines his love for history with photography, capturing the essence of historic landmarks around the world. When he’s not delving into archives, he’s sharing his insights through lectures and engaging articles.</p>
+        </section>
+        <section class="counters__container">
+            <div class="counter questions__counter" aria-label="Saved Questions Counter">
+                <img class="questions__icon" src="./assets/question.png"><span class="counter__amount">20 Question/s</span>
+            </div>
+            <div class="counter bookmarks__counter" aria-label="Saved Bookmarks Counter">
+                <img class="bookmarks__icon" src="./assets/bookmark_filled.png"><span class="counter__amount">20 Bookmark/s</span>
+            </div>
+        </section>
+        <section class="container settings__container">
+            <h2 class="subtitle">Settings</h2>
+            <settings>
+                <div class="setting__description">
+                    <h4><b>Dark Mode</b></h4>
+                    <p>Switch general styling to darker shades</p>
+                </div>
+                <div class="setting__toggle"><button>Enable</button></div>
+            </settings>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <a class="nav__link" aria-label="home" href="./index.html"><img class="nav__icon" src="./assets/home_filled.png"></a>
+            <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html"><img class="nav__icon" src="./assets/bookmark.png"></a>
+            <a class="nav__link current" aria-label="profile" href="./profile.html"><img class="nav__icon" src="./assets/profile_filled.png"></a>
+        </nav>
+    </footer>
+</body>
+</html>

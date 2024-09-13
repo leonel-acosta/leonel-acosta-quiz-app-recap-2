@@ -1,0 +1,16 @@
+.bookmark{
+    position:absolute;    
+    right:3em;
+    z-index:1;
+    height:50px
+}
+
+.bookmark:active{
+    height:60px
+}
+
+@media (min-width:600px){
+    .bookmark{
+        height:50px;
+    }
+}

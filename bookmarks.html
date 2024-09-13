@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Quiz App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="page__title">History Quiz App</h1>
+        <h2 class="page__subtitle" aria-class="Bookmarks list">· bookmarks ·</h2>
+    </header>
+    <main>
+        <section class="cards__container">
+            <div class="card__wrapper">
+                <img class="bookmark" src="assets/bookmark_filled.png">
+                <div class="question__card first__question">
+                    <h2 class="question__text">Which event marked the beginning of World War II?</h2>
+                    <div class="answer__container">
+                        <h3 class="answer__text active">The Invasion of Poland</h3>
+                    </div>
+                    <div class="categories__container">
+                        <h4 class="category__tag">#world-war-II</h4>
+                        <h4 class="category__tag">#Germany</h4>
+                        <h4 class="category__tag">#Poland</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card__wrapper">
+                <img class="bookmark" src="assets/bookmark_filled.png">
+                <div class="question__card second__question">
+                    <h2 class="question__text">The Magna Carta, signed in 1215, is significant because it:</h2>
+                    <div class="answer__container">
+                        <h3 class="answer__text active">Limited the power of the king and laid the foundation for modern democracy.</h3>
+                    </div>
+                    <div class="categories__container">
+                        <h4 class="category__tag">#democracy</h4>
+                        <h4 class="category__tag">#kingdom</h4>
+                        <h4 class="category__tag">#western-civilization</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card__wrapper">
+                <img class="bookmark active" src="assets/bookmark_filled.png">
+                <div class="question__card third__question">
+                    <h2 class="question__text active">Which ancient civilization is known for building the Machu Picchu complex?</h2>
+                    <div class="answer__container">
+                        <h3 class="show_answer__text">Inca</h3>
+                    </div>
+                    <div class="categories__container">
+                        <h4 class="category__tag">#ancient-civilization</h4>
+                        <h4 class="category__tag">#americas</h4>
+                        <h4 class="category__tag">#ruins</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <a class="nav__link" aria-label="home" href="./index.html"><img class="nav__icon" src="./assets/home.png"></a>
+            <a class="nav__link current" aria-label="bookmarks" href="./bookmarks.html"><img class="nav__icon" src="./assets/bookmark_filled.png"></a>
+            <a class="nav__link" aria-label="profile" href="./profile.html"><img class="nav__icon" src="./assets/profile.png"></a>
+        </nav>
+    </footer>
+</body>
+</html>

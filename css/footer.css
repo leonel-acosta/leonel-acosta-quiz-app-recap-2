@@ -1,0 +1,42 @@
+.footer{
+    background-color:var(--secondary-background-color);
+    position:sticky;
+    bottom:0;
+    width:100%;
+    z-index:1;
+}
+
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+nav a{
+    flex-basis:33%;
+    padding:1em 0.5em;
+    text-align:center;
+}
+
+nav a.current{
+    background-color: var(--accent-color);
+}
+
+nav a:hover{
+    background-color: var(--accent-color);
+}
+
+.nav__icon{
+    max-width:30px;
+}
+
+@media (min-width:599px){
+    nav a{
+        padding:1em 1em;
+    }
+
+    .nav__icon{
+        max-width:40px;
+    }
+}
+

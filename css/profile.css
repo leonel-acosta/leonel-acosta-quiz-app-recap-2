@@ -1,0 +1,152 @@
+.profile__container{
+    background-color:var(--background-color);
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding:2em;
+    position:relative;
+    justify-content: space-evenly;
+    align-content:center;
+    justify-items:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2em;
+}
+
+.profile__container .image__wrapper{
+    position:relative;
+}
+
+.profile__name{
+    font-size:3rem;
+    color:var(--primary-color)
+}
+.profile__picture{
+    object-fit:cover;
+    height:300px;
+    width:300px;
+    border-radius:200px;
+}
+
+.about-me__container{
+    padding:2em 3em;
+    background-color:var(--primary-background-color)
+}
+
+.subtitle{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--primary-color);
+    margin-bottom:0.6em;
+}
+
+.about-me__text{
+    text-align: justify;
+    margin-bottom:1em;
+    font-size:1.2rem;
+    line-height: 1.2;
+}
+
+.counters__container{
+    padding:2em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    gap:2em
+}
+
+.counter{
+    background-color: var(--accent-color);
+    padding:1em 2em;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
+    gap: 0.5em;
+    font-family: 'Lato';
+}
+
+.questions__counter{
+    background-color: var(--secondary-color);
+}
+
+.questions__counter:hover{
+    background-color: var(--accent-color);
+}
+
+.questions__icon{
+    width:30px;
+}
+
+.bookmarks__counter{
+    background-color: var(--accent-color);
+}
+
+.bookmarks__counter:hover{
+    background-color: var(--secondary-color);
+}
+
+.bookmarks__icon{
+    width:30px;
+}
+
+.settings__container{
+    background-color:var(--primary-background-color);
+    padding:2em 3em;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+    gap:2em
+}
+
+settings{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:1em;
+}
+
+.setting__description{
+    text-align:left;
+    font-size:1.2rem;
+    line-height: 1.2;
+}
+
+.setting__toggle button{
+    padding:1em 2em;
+    border-radius:10px;
+    background-color: var(--secondary-background-color);
+    color:var(--primary-background-color);
+    border:none;
+    font-size:1.1rem;
+}
+
+.setting__toggle button:hover{
+    background-color: var(--accent-color);
+    color:var(--secondary-background-color)
+}
+
+@media (min-width:600px){
+    .profile__container{
+        flex-direction:row;
+        padding:2em 0;
+        margin-bottom:2em;
+        justify-content: center;
+    }
+    
+    .counter{
+        font-size:1.2em
+    }
+
+    .questions__icon{
+        width:36px;
+    }
+    .bookmarks__icon{
+        width:36px;
+    }
+}

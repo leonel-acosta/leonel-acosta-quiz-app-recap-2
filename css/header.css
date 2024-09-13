@@ -1,0 +1,19 @@
+header{
+    background-color:var(--secondary-background-color);
+    padding:2rem;
+    position:sticky;
+    top:0;
+    z-index:1
+}
+
+.page__title{
+    color:var(--secondary-color);
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.page__subtitle{
+    color:var(--accent-color);
+    text-align:center;
+    text-transform: uppercase;
+}
