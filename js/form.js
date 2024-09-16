@@ -1,18 +1,17 @@
 console.clear()
-
-const cardsContainer = document.querySelector('[data-js="cards-container"]')
-
 const form = document.querySelector("form")
 const question = document.querySelector("#your-question")
 const answer = document.querySelector("#answer")
 const tags = document.querySelector("#tags")
 const button = document.querySelector("button")
 
+const newCardsContainer = document.querySelector('[data-js="custom-cards"]')
+
 form.addEventListener("submit",(event) => {
     event.preventDefault()
-    const card = document.createElement("div")
-    card.classList.add("card__wrapper")
-    card.immerHTML = `
+    const customCard = document.createElement("div")
+    customCard.classList.add("card__wrapper")
+    customCard.immerHTML = `
                 <img class="bookmark" src="assets/bookmark.png" data-js="bookmark">
                 <div class="question__card first__question" data-js="question-card">
                     <h2 class="question__text" data-js="question-text">${question}</h2>
@@ -25,7 +24,7 @@ form.addEventListener("submit",(event) => {
                     </div>
                 </div>
     `
-    cardsContainer.append(card)
+    newCardsContainer.append(customCard)
 
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
