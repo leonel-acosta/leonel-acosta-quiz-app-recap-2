@@ -7,6 +7,23 @@ const button = document.querySelector("button")
 
 const newCardsContainer = document.querySelector('[data-js="custom-cards"]')
 
+// characters counter
+
+const charcount = document.querySelector('[data-js="charcount"]')
+const input = document.querySelector("textarea")
+
+input.addEventListener("input", (event) => {
+    event.preventDefault()
+    
+    const maxChars =  input.getAttribute('maxlength')
+    const usedChars = input.value.length
+    const remainingChars = maxChars - usedChars
+    console.log("Available characters: ",remainingChars+"/"+ maxChars)
+    charcount.innerHTML = `${remainingChars} from ${maxChars} characters available`
+})
+
+// submit form - create new card below
+
 form.addEventListener("submit",(event) => {
     event.preventDefault()
     const customCard = document.createElement("div")
