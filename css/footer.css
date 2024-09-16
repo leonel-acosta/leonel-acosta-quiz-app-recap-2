@@ -1,4 +1,4 @@
-@media (max-width: 599px) {
+@media (max-width: 799px) {
     .footer{
         background-color:var(--secondary-background-color);
         position:sticky;
@@ -32,7 +32,7 @@
     }
 }
 
-@media (min-width:599px){
+@media (min-width:800px){
     .mobile{
         display:none;
     }
