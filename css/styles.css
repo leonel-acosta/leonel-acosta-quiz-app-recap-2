@@ -5,6 +5,7 @@
 @import url("card.css");
 @import url("bookmarks.css");
 @import url("profile.css");
+@import url("form.css");
 
 @media (min-width:600px){
     main{
@@ -24,7 +25,7 @@ font-style:normal;
 font-weight: bold;
 }
 
-p, h3, h4, h5, a{
+p, h3, h4, h5, a, label, form, input{
     font-family: 'lato';
     font-style:normal;
     font-weight: 100;
@@ -32,6 +33,21 @@ p, h3, h4, h5, a{
 
 .hidden{
     display: none;
+}
+
+button{
+    padding:1em 2em;
+    border-radius:10px;
+    background-color: var(--secondary-background-color);
+    color:var(--primary-background-color);
+    border:none;
+    font-size:1.1rem;
+}
+
+button:hover{
+    background-color: var(--accent-color);
+    color:var(--secondary-background-color)
+}
 
 /*Dark mode classes */
 body.dark {
