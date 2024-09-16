@@ -8,8 +8,16 @@
 </head>
 <body data-js="body">
     <header>
-        <h1 class="page__title">History Quiz App</h1>
-        <h2 class="page__subtitle" aria-class="My profile">· Question Maker ·</h2>
+        <div class="title__holder">
+            <h1 class="page__title">History Quiz App</h1>
+            <h2 class="page__subtitle" aria-class="My profile">· Question Maker ·</h2>
+        </div>
+        <nav class="desktop">
+            <a class="nav__link" aria-label="home" href="./index.html">Quiz</a>
+            <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html">Bookmarks</a>
+            <a class="nav__link current" aria-label="form" href="./form.html">Customizer</a>
+            <a class="nav__link" aria-label="profile" href="./profile.html">Profile</a>
+        </nav>
     </header>
     <main>
         <section class="form__container container">
@@ -33,7 +41,7 @@
             </form>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer mobile">
         <nav>
             <a class="nav__link" aria-label="home" href="./index.html"><img class="nav__icon" src="./assets/home_filled.png"></a>
             <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html"><img class="nav__icon" src="./assets/bookmark.png"></a>

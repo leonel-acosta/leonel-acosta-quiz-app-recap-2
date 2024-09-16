@@ -8,7 +8,15 @@
 </head>
 <body data-js="body">
     <header>
-        <h1 class="page__title">History Quiz App</h1>
+        <div class="title__holder">
+            <h1 class="page__title">History Quiz App</h1>
+        </div>
+        <nav class="desktop">
+            <a class="nav__link current" aria-label="home" href="./index.html">Quiz</a>
+            <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html">Bookmarks</a>
+            <a class="nav__link" aria-label="form" href="./form.html">Customizer</a>
+            <a class="nav__link" aria-label="profile" href="./profile.html">Profile</a>
+        </nav>
     </header>
     <main>
         <section class="cards__container" data-js="cards-container"></section>
@@ -89,11 +97,12 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer mobile">
         <nav>
             <a class="nav__link current" aria-label="home" href="./index.html"><img class="nav__icon" src="./assets/home_filled.png"></a>
             <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html"><img class="nav__icon" src="./assets/bookmark.png"></a>
-            <a class="nav__link" aria-label="profile" href="./profile.html"><img class="nav__icon" src="./assets/profile.png"></a>
+            <a class="nav__link" aria-label="form" href="./form.html"><img class="nav__icon" src="./assets/question.png"></a>
+            <a class="nav__link" aria-label="profile" href="./profile.html"><img class="nav__icon" src="./assets/profile_filled.png"></a>
         </nav>
     </footer>
 </body>
