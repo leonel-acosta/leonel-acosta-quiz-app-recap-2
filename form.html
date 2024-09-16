@@ -27,17 +27,17 @@
                         Your question
                     </label>
                     <textarea required aria-label="question" type="textarea" name="question" id="your-question" maxlength="150" placeholder="Your question"></textarea>
-                    <p class="charcount small">${chars} characters remaining</p>
+                    <p class="charcount" data-js="charcount"></p>
                     <label for="answer"></label>
                         Answer
                     </label>
                     <textarea required aria-label="answer" type="textarea" name="answer" id="answer" maxlength="250" placeholder="Answer"></textarea>
-                    <p class="charcount small">${chars} characters remaining</p>
+                    <p class="charcount" data-js="charcount">
                     <label for="tags"></label>
                         Tags
                     </label>
                     <input required aria-label="tags" type="text" name="tags" id="tags" maxlength="30" placeholder="tags" maxlength="50">
-                    <p class="charcount small">${chars} characters remaining</p>
+                    <p class="charcount" data-js="charcount"></p>
                     <button class="button" type="submit">Submit</button>
                 </fieldset>
             </form>
