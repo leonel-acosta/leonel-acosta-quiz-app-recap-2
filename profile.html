@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewpo  rt" content="width=device-width, initial-scale=1.0">
     <title>History Quiz App</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body data-js="body">
     <header>
-        <h1 class="page__title">History Quiz App</h1>
-        <h2 class="page__subtitle" aria-class="My profile">· My profile ·</h2>
+        <div class="title__holder">
+            <h1 class="page__title">History Quiz App</h1>
+            <h2 class="page__subtitle" aria-class="My profile">My profile</h2>
+        </div>
+        <nav class="desktop">
+            <a class="nav__link" aria-label="home" href="./index.html">Quiz</a>
+            <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html">Bookmarks</a>
+            <a class="nav__link" aria-label="form" href="./form.html">Customizer</a>
+            <a class="nav__link current" aria-label="profile" href="./profile.html">Profile</a>
+        </nav>
     </header>
     <main>
         <section class="profile__container">
@@ -41,10 +49,11 @@
             </settings>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer mobile">
         <nav>
             <a class="nav__link" aria-label="home" href="./index.html"><img class="nav__icon" src="./assets/home_filled.png"></a>
             <a class="nav__link" aria-label="bookmarks" href="./bookmarks.html"><img class="nav__icon" src="./assets/bookmark.png"></a>
+            <a class="nav__link" aria-label="form" href="./form.html"><img class="nav__icon" src="./assets/question.png"></a>
             <a class="nav__link current" aria-label="profile" href="./profile.html"><img class="nav__icon" src="./assets/profile_filled.png"></a>
         </nav>
     </footer>
